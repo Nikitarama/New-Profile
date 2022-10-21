@@ -1,0 +1,109 @@
+.flip-card {
+    background-color: transparent;
+    width:300px;
+    height:200px;
+    border:0px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.second-flip-card {
+    float:right;
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+
+.flip-card-inner {
+    position:relative;
+    width:100%;
+    height:100%;
+    text-align:center;
+    transition:transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.second-flip-card:hover .flip-card-inner {
+    transform:rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width:100%;
+    height:100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.second-flip-card-front, .second-flip-card-back {
+    position: absolute;
+    width:100%;
+    height:100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    width:30%;
+    float:left;
+    background-color: #bbb;
+    color:black;
+    border-color:2px solid bisque;
+}
+
+.second-flip-card-front {
+    float:right;
+    color:black;
+    
+}
+
+.flip-card-back {
+    background-color: bisque;
+    color:white;
+    transform:rotateY(180deg);
+    box-shadow: 0px 0px 20px black;
+}
+
+.second-flip-card-back {
+    color: black;
+    background-color: grey;
+    border-color: bisque;
+    transform:rotateY(180deg);
+    box-shadow: 0px 0px 20px black;
+}
+
+.topnav {
+    margin: 0px;
+    padding:10px;
+    border-bottom:2px solid lightgray;
+    box-shadow:0px 1px 4px black;
+    background-color:bisque;
+}
+
+.topnav i {
+    padding:1px;
+    font-size:30px;
+}
+
+i:hover {
+    color:white;
+}
+
+.topnav a{
+    font-size:17px;
+    margin:0px 10px;
+    display:inline-block;
+    padding:7px;
+    margin-right: 60px;
+}
+
+span {
+    padding:60px;
+}
+
+a:hover {
+    color:white;
+}
